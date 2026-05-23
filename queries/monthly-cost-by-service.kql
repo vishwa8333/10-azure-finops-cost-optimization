@@ -1,0 +1,4 @@
+Usage
+| summarize Cost=sum(PreTaxCost) by ServiceName, bin(UsageDateTime, 30d)
+| order by Cost desc
+
